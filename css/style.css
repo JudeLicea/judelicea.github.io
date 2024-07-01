@@ -225,8 +225,9 @@ h5 {
 }
 
 .box-logo {
-    display: block;
+    display: none;
     padding: 20px;
+    
 }
 
 .box-primary-nav-trigger {
@@ -245,9 +246,14 @@ h5 {
     display: none;
 }
 
+.box-menu-icon {
+display: none;
+}
+
 .box-primary-nav-trigger .box-menu-icon {
     display: inline-block;
     position: absolute;
+    display: none;
     left: 50%;
     top: 50%;
     bottom: auto;
@@ -321,6 +327,7 @@ h5 {
 
 .box-primary-nav-trigger .box-menu-text {
     display: inline-block;
+    display: none;
 }
 
 .box-primary-nav-trigger .box-menu-icon {
@@ -332,6 +339,7 @@ h5 {
 
 .box-primary-nav {
     position: fixed;
+    display: none;
     left: 0;
     top: 0;
     height: 100%;
@@ -422,16 +430,43 @@ h5 {
 ==================================================*/
 
 .box-intro {
-    text-align: center;
-    display: table;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
-    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.box-intro .table-cell {
-    display: table-cell;
-    vertical-align: middle;
+.box-intro-content {
+    display: flex;
+    align-items: center;
 }
+
+.image-container {
+    margin-right: 20px; /* Adjust the space between image and text as needed */
+}
+
+.intro-image {
+    max-width: 45%;
+    height: auto;
+    display: block;
+    margin-left: 150px;
+}
+
+.text-container {
+    max-width: 60%; /* Adjust the width as needed */
+}
+
+.table-cell {
+    display: block;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    text-align: left; /* Align text to the left */
+}
+
+
 
 .box-intro em {
     font-style: normal;
